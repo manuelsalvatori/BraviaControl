@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -41,7 +42,7 @@ namespace BraviaControl
             _clientId = clientId;
             _nickname = nickname;
 
-            _cookieContainer.Add(new Cookie("auth", authKey, "/sony", deviceHostName));
+            _cookieContainer.Add(new Uri($"http://{_deviceHostName}/sony/"), new Cookie("auth", authKey, "/sony", deviceHostName));
         }
 
         /// <summary>
@@ -98,7 +99,7 @@ namespace BraviaControl
                         .Value;
 
                 _cookieContainer = new CookieContainer();
-                _cookieContainer.Add(new Cookie("auth", authKey, "/sony", _deviceHostName));
+                _cookieContainer.Add(new Uri($"http://{_deviceHostName}/sony/"), new Cookie("auth", authKey, "/sony", _deviceHostName));
 
                 return authKey;
             }
@@ -208,7 +209,7 @@ namespace BraviaControl
             }
             else
             {
-                if (typeof(ICompositeResponse).IsAssignableFrom(typeof(TResponse)))
+                if (typeof(ICompositeResponse).GetType().GetTypeInfo().IsAssignableFrom(typeof(TResponse).GetType().GetTypeInfo()))
                 {
                     var obj = Activator.CreateInstance<TResponse>() as ICompositeResponse;
                     obj.ReadFromJson((JArray)responseData.GetValue("result"));
