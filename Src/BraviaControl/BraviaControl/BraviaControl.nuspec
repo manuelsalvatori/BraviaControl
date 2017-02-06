@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>BraviaControl</id>
-    <version>$version$</version>
-    <title>BraviaControl</title>
-    <authors>Mayuki Sawatari</authors>
-    <owners>Mayuki Sawatari</owners>
-    <licenseUrl>https://github.com/mayuki/BraviaControl/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/mayuki/BraviaControl/</projectUrl>
+    <id>BraviaControl.Core</id>
+    <version>1.0.0</version>
+    <title>BraviaControl for .NET Core</title>
+    <authors>Manuel Salvatori</authors>
+    <owners>Manuel Salvatori</owners>
+    <licenseUrl>https://github.com/manuelsalvatori/BraviaControl/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/manuelsalvatori/BraviaControl</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Sony BRAVIA remote control API client for .NET</description>
+    <description>Sony BRAVIA remote control API client for .NET Core - Fork from https://github.com/mayuki/BraviaControl</description>
     <releaseNotes>Initial Release</releaseNotes>
-    <copyright>Copyright 2016 Mayuki Sawatari</copyright>
-    <tags>BRAVIA API</tags>
+    <copyright>Copyright 2017 Manuel Salvatori</copyright>
+    <tags>BRAVIA API, CORE</tags>
   </metadata>
 </package>
