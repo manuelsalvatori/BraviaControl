@@ -17,8 +17,10 @@ namespace BraviaControl.Sample
 
         static async Task MainAsync(string[] args)
         {
-            var authKey = File.Exists("ClientAuthKey.txt") ? File.ReadAllText("ClientAuthkey.txt") : String.Empty;
-            var client = new BraviaControlClient(ConfigurationManager.AppSettings["TvHostname"], ConfigurationManager.AppSettings["ClientId"], "SampleClient (.NET)", authKey);
+            var authKey = File.Exists("BraviaClientAuth.key") ? File.ReadAllText("BraviaClientAuth.key") : String.Empty;
+            var hostName = ConfigurationManager.AppSettings["TvHostname"];
+            var clientId = ConfigurationManager.AppSettings["ClientId"];
+            var client = new BraviaControlClient(hostName, clientId, "SampleClient (.NET)", authKey);
 
             // Register or Update AuthKey
             if (String.IsNullOrWhiteSpace(authKey))
@@ -28,13 +30,13 @@ namespace BraviaControl.Sample
                 Console.Write("Enter PIN: ");
                 var pinCode = Console.ReadLine();
                 authKey = await client.RegisterAsync(pinCode);
-                File.WriteAllText("ClientAuthkey.txt", authKey);
+                File.WriteAllText("BraviaClientAuth.key", authKey);
             }
             else
             {
                 // Update Registration Authkey
                 authKey = await client.RenewAuthKeyAsync();
-                File.WriteAllText("ClientAuthkey.txt", authKey);
+                File.WriteAllText("BraviaClientAuth.key", authKey);
             }
 
             // Get power status

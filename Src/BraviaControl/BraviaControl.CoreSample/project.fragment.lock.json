@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "BraviaControl/1.0.0": {
+      "type": "project",
+      "framework": ".NETStandard,Version=v1.3",
+      "compile": {
+        "bin/Debug/BraviaControl.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/BraviaControl.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/BraviaControl.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

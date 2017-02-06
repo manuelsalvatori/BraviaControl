@@ -37,9 +37,7 @@
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <None Include="BraviaControl.nuspec" />
-    <None Include="packages.config" />
     <None Include="project.json" />
-    <None Include="project.lock.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BraviaApiException.cs" />
