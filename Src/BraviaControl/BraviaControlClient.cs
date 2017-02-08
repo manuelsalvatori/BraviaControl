@@ -209,8 +209,9 @@ namespace BraviaControl
             }
             else
             {
-                if(typeof(TResponse).GetTypeInfo().GetInterfaces().Contains(typeof(ICompositeResponse)))
-                {                    
+                if(typeof(TResponse).GetTypeInfo().ImplementedInterfaces.Contains(typeof(ICompositeResponse)))
+                //if (typeof(TResponse).GetTypeInfo().GetInterfaces().Contains(typeof(ICompositeResponse)))                   
+                {
                     var obj = Activator.CreateInstance<TResponse>() as ICompositeResponse;
                     obj.ReadFromJson((JArray)responseData.GetValue("result"));
                     return (TResponse)obj;

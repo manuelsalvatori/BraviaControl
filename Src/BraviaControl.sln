@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BraviaControl.CoreSample", "BraviaControl.CoreSample\BraviaControl.CoreSample.csproj", "{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BraviaControl", "BraviaControl\BraviaControl.csproj", "{03BACD15-C19F-41B7-8541-F3F0B0487DFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Debug|x64.ActiveCfg = Debug|x64
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Debug|x64.Build.0 = Debug|x64
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Debug|x86.ActiveCfg = Debug|x86
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Debug|x86.Build.0 = Debug|x86
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Release|x64.ActiveCfg = Release|x64
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Release|x64.Build.0 = Release|x64
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Release|x86.ActiveCfg = Release|x86
+		{444DE708-23C4-4A7D-B5FE-E8E30FB40E88}.Release|x86.Build.0 = Release|x86
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Debug|x64.ActiveCfg = Debug|x64
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Debug|x64.Build.0 = Debug|x64
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Debug|x86.ActiveCfg = Debug|x86
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Debug|x86.Build.0 = Debug|x86
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Release|x64.ActiveCfg = Release|x64
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Release|x64.Build.0 = Release|x64
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Release|x86.ActiveCfg = Release|x86
+		{03BACD15-C19F-41B7-8541-F3F0B0487DFB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
