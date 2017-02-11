@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -12,7 +11,7 @@ using Newtonsoft.Json.Linq;
 
 namespace BraviaControl
 {
-    public partial class BraviaControlClient
+    public partial class BraviaControlClient : IBraviaControlClient
     {
         private CookieContainer _cookieContainer = new CookieContainer();
         private string _deviceHostName;

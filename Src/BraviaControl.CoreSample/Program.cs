@@ -31,7 +31,7 @@ namespace BraviaControl.CoreSample
             var clientName = ".net Core Sony Bravia remote control Sample";
 
             // Client used to control the TV
-            var client = new BraviaControlClient(hostName, clientId, clientName, authKey);
+            IBraviaControlClient client = new BraviaControlClient(hostName, clientId, clientName, authKey);
 
             // Register or Update AuthKey
             if (String.IsNullOrWhiteSpace(authKey))

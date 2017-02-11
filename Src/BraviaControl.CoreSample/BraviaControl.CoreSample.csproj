@@ -11,7 +11,9 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="BraviaControl.Core" Version="1.0.1" />
     <PackageReference Include="Microsoft.NETCore.App" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BraviaControl\BraviaControl.csproj" />
   </ItemGroup>
 </Project>
